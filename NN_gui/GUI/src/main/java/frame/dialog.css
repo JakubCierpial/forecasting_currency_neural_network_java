@@ -1,0 +1,6 @@
+.dialog > *.label.content{
+    -fx-font-size:18px;
+}
+.dialog > *.header-panel *.label{
+    -fx-font-size:25px;
+}

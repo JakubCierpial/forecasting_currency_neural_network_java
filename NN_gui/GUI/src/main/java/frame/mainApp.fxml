@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frame.FrameController">
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#homeAction" text="Powrót" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="trainingMenu" mnemonicParsing="false" text="Uczenie">
+            <items>
+              <MenuItem fx:id="all" mnemonicParsing="false" onAction="#trainall" text="Wszystkie" />
+                  <MenuItem fx:id="aud" mnemonicParsing="false" onAction="#train" text="AUD" />
+                  <MenuItem fx:id="cad" mnemonicParsing="false" onAction="#train" text="CAD" />
+                  <MenuItem fx:id="chf" mnemonicParsing="false" onAction="#train" text="CHF" />
+                  <MenuItem fx:id="eur" mnemonicParsing="false" onAction="#train" text="EUR" />
+                  <MenuItem fx:id="gbp" mnemonicParsing="false" onAction="#train" text="GBP" />
+                  <MenuItem fx:id="jpy" mnemonicParsing="false" onAction="#train" text="JPY" />
+                  <MenuItem fx:id="nok" mnemonicParsing="false" onAction="#train" text="NOK" />
+                  <MenuItem fx:id="sek" mnemonicParsing="false" onAction="#train" text="SEK" />
+                  <MenuItem fx:id="usd" mnemonicParsing="false" onAction="#train" text="USD" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#showAbout" text="O programie" />
+                  <MenuItem fx:id="howToUse" mnemonicParsing="false" onAction="#showHelp" text="Jak używać" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

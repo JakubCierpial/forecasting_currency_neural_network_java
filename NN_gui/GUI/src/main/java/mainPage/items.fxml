@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPage.MainWindowController">
+   <children>
+      <Button fx:id="aud" layoutX="34.0" layoutY="148.0" mnemonicParsing="false" onAction="#audAction" prefHeight="40.0" prefWidth="350.0" text="AUD" />
+      <Button fx:id="usd" layoutX="34.0" layoutY="570.0" mnemonicParsing="false" onAction="#usdAction" prefHeight="48.0" prefWidth="350.0" text="USD" />
+      <Button fx:id="sek" layoutX="34.0" layoutY="509.0" mnemonicParsing="false" onAction="#sekAction" prefHeight="48.0" prefWidth="350.0" text="SEK" />
+      <Button fx:id="nok" layoutX="34.0" layoutY="456.0" mnemonicParsing="false" onAction="#nokAction" prefHeight="40.0" prefWidth="350.0" text="NOK" />
+      <Button fx:id="jpy" layoutX="34.0" layoutY="404.0" mnemonicParsing="false" onAction="#jpyAction" prefHeight="40.0" prefWidth="350.0" text="JPY" />
+      <Button fx:id="gbp" layoutX="34.0" layoutY="352.0" mnemonicParsing="false" onAction="#gbpAction" prefHeight="40.0" prefWidth="350.0" text="GBP" />
+      <Button fx:id="eur" layoutX="34.0" layoutY="301.0" mnemonicParsing="false" onAction="#eurAction" prefHeight="40.0" prefWidth="350.0" text="EUR" />
+      <Button fx:id="chf" layoutX="34.0" layoutY="249.0" mnemonicParsing="false" onAction="#chfAction" prefHeight="40.0" prefWidth="350.0" text="CHF" />
+      <Button fx:id="cad" layoutX="34.0" layoutY="199.0" mnemonicParsing="false" onAction="#cadAction" prefHeight="40.0" prefWidth="350.0" text="CAD" />
+      <Label fx:id="audActual" layoutX="452.0" layoutY="153.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="cadActual" layoutX="453.0" layoutY="204.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="chfActual" layoutX="452.0" layoutY="254.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="eurActual" layoutX="453.0" layoutY="306.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="gbpActual" layoutX="452.0" layoutY="357.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="jpyActual" layoutX="452.0" layoutY="409.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="nokActual" layoutX="453.0" layoutY="461.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="sekActual" layoutX="452.0" layoutY="518.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="usdActual" layoutX="452.0" layoutY="579.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="usdFuture" layoutX="692.0" layoutY="579.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="sekFuture" layoutX="692.0" layoutY="518.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="nokFuture" layoutX="692.0" layoutY="461.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="jpyFuture" layoutX="692.0" layoutY="409.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="gbpFuture" layoutX="692.0" layoutY="357.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="eurFuture" layoutX="692.0" layoutY="306.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="chfFuture" layoutX="692.0" layoutY="254.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="cadFuture" layoutX="692.0" layoutY="204.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="audFuture" layoutX="692.0" layoutY="153.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="432.0" layoutY="48.0" text="Aktualna cena">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="648.0" layoutY="48.0" text="Przewidywana cena">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="54.0" text="Waluty">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="401.0" layoutY="187.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="198.0" prefHeight="3.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="238.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="248.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="288.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="300.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="340.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="351.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="147.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="391.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="403.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="443.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="495.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="455.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="508.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="556.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="569.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="401.0" layoutY="617.0" prefHeight="0.0" prefWidth="473.0" />
+      <Separator layoutX="34.0" layoutY="92.0" prefHeight="18.0" prefWidth="842.0" />
+   </children>
+</AnchorPane>

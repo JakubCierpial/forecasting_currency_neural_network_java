@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency.TimeChooserController">
+   <children>
+      <MenuButton fx:id="menu" layoutX="38.0" layoutY="105.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" text="okres">
+        <items>
+          <MenuItem fx:id="week" mnemonicParsing="false" text="Tydzień" />
+          <MenuItem fx:id="twoWeeks" mnemonicParsing="false" text="2 tygodnie" />
+            <MenuItem fx:id="threeWeeks" mnemonicParsing="false" text="3 tygodnie" />
+            <MenuItem fx:id="month" mnemonicParsing="false" text="Miesiąc" />
+            <MenuItem fx:id="twoMonths" mnemonicParsing="false" text="2 miesiące" />
+            <MenuItem fx:id="fourMonth" mnemonicParsing="false" text="4 miesiące" />
+            <MenuItem fx:id="sixMonths" mnemonicParsing="false" text="6 miesięcy" />
+            <MenuItem fx:id="year" mnemonicParsing="false" text="Rok" />
+            <MenuItem fx:id="twoYears" mnemonicParsing="false" text="2 lata" />
+            <MenuItem fx:id="threeYears" mnemonicParsing="false" text="3 lata" />
+        </items>
+      </MenuButton>
+      <Label fx:id="choose" layoutX="33.0" layoutY="57.0" text="Wybierz zasięg w tył" />
+   </children>
+</AnchorPane>
